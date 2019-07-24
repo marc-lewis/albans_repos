@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'unicorn_popregular';
+  src: url('/fonts/unicorn_pop-webfont.woff2') format('woff2'),
+  url('/fonts/unicorn_pop-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin popFont {
+  font-family: 'unicorn_popregular', "Comic Sans MS", sans-serif;
+}
+
+@mixin header {
+  font-size: 30px;
+
+  @media (min-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+@mixin bodyCopy {
+  font-size: 25px;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
+}

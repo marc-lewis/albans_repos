@@ -1,0 +1,26 @@
+$gap-extra-large: 120px;
+$gap-large: 60px;
+$gap-medium: 40px;
+$gap-small: 20px;
+$gap-tiny: 10px;
+
+$margin-extra-large: $gap-extra-large;
+$margin-large: $gap-large;
+$margin-medium: $gap-medium;
+$margin-small: $gap-small;
+$margin-tiny: $gap-tiny;
+
+$padding-extra-large: $gap-extra-large;
+$padding-large: $gap-large;
+$padding-medium: $gap-medium;
+$padding-small: $gap-small;
+$padding-tiny: $gap-tiny;
+
+@mixin container {
+  margin: $margin-large $margin-small;
+
+  @media (min-width: 768px) {
+    margin: $margin-large auto;
+    max-width: 600px;
+  }
+}
